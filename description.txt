@@ -1,0 +1,7 @@
+This project involves implementing in a design environment a square wave signal generator using a relaxation oscillator. The signal generator consists of two main blocks:
+
+The fixed potential generator block, composed of resistors R1, R2, and operational amplifier OA1, connected in a repeater configuration.
+
+The relaxation oscillator built around the hysteresis comparator, formed by operational amplifier OA2 and resistors R3 and R4, with a closed positive feedback loop through resistor R4. The time constant of the relaxation oscillator is determined by the components R and C.
+
+The square wave signal is generated at the output denoted as vDR by switching the comparator output between the two extreme values: VOL and VOH. The input to the hysteresis comparator is controlled by the voltage on capacitor C, denoted in the figure as vRLX. This voltage varies as the capacitor charges and discharges, determining the comparator switching. The capacitor charges/discharges exponentially, tending to 'relax' to the final value (VOL or VOH), but during the process, it reaches the comparator threshold value, at which point the comparator output switches (from VOL to VOH or vice versa).
